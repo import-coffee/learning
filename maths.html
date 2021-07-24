@@ -1,48 +1,53 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <!-- UIkit CSS -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.7.0/dist/css/uikit.min.css" />
+<head>
+    <!-- Estilos propios -->
+    <link rel="stylesheet" href="estilos.css"/>
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.7.0/dist/css/uikit.min.css" />
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.7.0/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.7.0/dist/js/uikit-icons.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
 
-        <!-- UIkit JS -->
-        <script src="https://cdn.jsdelivr.net/npm/uikit@3.7.0/dist/js/uikit.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/uikit@3.7.0/dist/js/uikit-icons.min.js"></script>
-    </head>
-
-    <body>
+<body>
+    <div class="uk-container"> 
         <h1 class="uk-margin-top uk-heading-line uk-text-center" style="font-family: 'Courier New', Courier, monospace;"><span>Matemáticas</span></h1>
-    
         <div class="uk-grid-column-small uk-grid-row-large uk-child-width-1-2@s uk-text-center" uk-grid>
             <div>
                 <div class="uk-card uk-card-default uk-card-body"> <span class="uk-text-large">Essence of Linear Algebra</span>
-                    <iframe class="uk-margin" width="560" height="315" uk-video="autoplay: true; automute:true" src="https://www.youtube.com/embed/videoseries?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <br>
-                    <span class="uk-margin">
+                    <div class="videoWrapper uk-margin">     
+                        <iframe uk-video="autoplay: true; automute:true" src="https://www.youtube.com/embed/videoseries?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <span>
                         <a href="https://www.youtube.com/channel/UCYO_jab_esuFRV4b17AJtAw">3Blue1Brown</a> nos introduce al Álgebra Lineal de manera geométrica, te lo recomendamos tanto si has estudiado la asignatura como si no las has visto nunca y tienes interes por el Álgebra. Aplicaciones Lineales como 
                         transformaciones del espacio, ¿Cúal es el significado geométrico de un autovector?, cambios de base...
                     </span>
                 </div>
-                
-                
             </div>
+
             <div>
                 <div class="uk-card uk-card-default uk-card-body"> 
                     <span class="uk-text-large">The Map of Mathematics</span>
-                    <iframe class="uk-margin" width="560" height="315" 
-                    uk-video="autoplay: true; automute:true"
-                    src="https://www.youtube.com/embed/OmJ-4B-mS-Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <br>
-                    <span class="uk-margin">
+                    <div class = "videoWrapper uk-margin">
+                        <iframe class="uk-margin" uk-video="autoplay: true; automute:true" src="https://www.youtube.com/embed/OmJ-4B-mS-Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                        <span>
                         El canal de YouTube <a href="https://www.youtube.com/channel/UCxqAWLTk1CmBvZFPzeZMd9A">Domain of Science</a> nos ofrece, en solo 10 minutos, una panóramica del campo de las matemáticas, ¿Alguna
                         vez has tenido curiosidad por saber que hay más allá en el universo de las matemáticas puras y aplicadas? Análisis, Topología, Ecuaciones Diferenciales, Análisis Complejo, Algebra Abstracta, Geometria Diferencial, Estadística, Machine Learning, Informática, Optimización...    
                     </span>
                 </div>
             </div>
-           
+        
         </div>
-        <ul class="uk-margin-left uk-breadcrumb">
+
+        <ul class="uk-breadcrumb">
             <li><a href="index.html">Inicio</a></li>
             <li><a href="maths.html">Matemáticas</a></li>
-        </ul>    
-    </body>
+        </ul>
+    </div>
+    </div>
+</body>
+    
 </html>
